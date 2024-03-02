@@ -1,0 +1,29 @@
+<form [formGroup]="input">
+  <div class="dense-3">
+    <mat-form-field
+      class="full-width matFormField"
+      appearance="outline"
+      outlineColor="red"
+      subscriptSizing="dynamic"
+    >
+      <!-- <mat-label class="centered-label">test</mat-label> -->
+      <input
+        matInput
+        class="centered"
+        type="text"
+        placeholder="Ex. Pizza"
+        (keydown.enter)="onKeydown()"
+        formControlName="value"
+      />
+      <!-- <button
+        *ngIf="value"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="value = ''"
+      > -->
+      <!-- <mat-icon>close</mat-icon> -->
+      <!-- </button> -->
+    </mat-form-field>
+  </div>
+</form>

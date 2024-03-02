@@ -1,0 +1,42 @@
+@use '@angular/material' as mat;
+.dense-1 {
+  @include mat.all-component-densities(-1);
+}
+.dense-2 {
+  @include mat.all-component-densities(-2);
+}
+.dense-3 {
+  @include mat.all-component-densities(-3);
+}
+
+.full-width {
+  width: 100%;
+}
+.centered {
+  text-align: center;
+}
+.mdc-text-field--outlined:not(.mdc-text-field-disabled)
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field-disabled)
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field-disabled)
+  .mdc-notched-outline__trailing {
+  border-color: #141b4d !important;
+}
+
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__leading,
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__notch,
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__trailing {
+//   border-width: 8px !important;
+// }
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__leading,
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__notch,
+// .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-notched-outline
+//   .mdc-notched-outline__trailing {
+//   border-width: 8px !important;
+// }
